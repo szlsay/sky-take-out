@@ -174,7 +174,6 @@ public class ReportServiceImpl implements ReportService {
 
         //计算时间区间内的有效订单数量
         Integer validOrderCount = validOrderCountList.stream().reduce(Integer::sum).get();
-        validOrderCountList.stream().re
 
         Double orderCompletionRate = 0.0;
         if(totalOrderCount != 0){
